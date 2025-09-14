@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/sybrid">
+
+    <!-- Status Bar Space -->
+    <View
+        android:id="@+id/statusBarSpace"
+        android:layout_width="match_parent"
+        android:layout_height="10dp" />
+
+    <!-- Story Progress Bar -->
+    <LinearLayout
+        android:id="@+id/storyProgressContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginTop="8dp"
+        android:showDividers="middle"
+        android:divider="@drawable/divider" >
+
+        <View
+            android:id="@+id/storyProgressBar"
+            android:layout_width="0dp"
+            android:layout_height="3dp"
+            android:layout_weight="1"
+            android:background="@drawable/story_progress_background" />
+
+    </LinearLayout>
+
+
+    <!-- Story Header -->
+    <LinearLayout
+        android:id="@+id/storyHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingHorizontal="10dp"
+        android:paddingVertical="4dp">
+
+        <!-- Profile Picture -->
+        <ImageView
+            android:layout_width="42dp"
+            android:layout_height="42dp"
+            android:src="@drawable/mecircle"
+            android:scaleType="centerCrop" />
+
+        <!-- Story Info (Highlight + Song Info stacked vertically) -->
+        <LinearLayout
+            android:id="@+id/storyInfo"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_marginStart="8dp"
+            android:padding="2dp">
+
+            <!-- Highlight -->
+            <TextView
+                android:id="@+id/highlight"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="Abdul Rafay"
+                android:textColor="#000000"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:layout_marginTop="8dp"/>
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingVertical="3dp"
+            android:layout_marginEnd="220dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/tick"
+                android:layout_marginTop="11dp">
+
+            </ImageView>
+
+        </LinearLayout>
+
+        <!-- Close Button -->
+        <ImageView
+            android:id="@+id/closeButton"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/close"
+            android:background="?android:attr/selectableItemBackgroundBorderless"
+            android:layout_marginTop="10dp"/>
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:layout_weight="0.6">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/heartIcon"
+                android:layout_width="78dp"
+                android:layout_height="178dp"
+                android:src="@drawable/heart"
+                android:layout_gravity="bottom|start"
+                android:layout_marginStart="20dp"
+                android:layout_marginBottom="1dp"
+                />
+        </FrameLayout>
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:src="@drawable/mystory"
+        android:scaleType="fitXY" />
+
+</LinearLayout>

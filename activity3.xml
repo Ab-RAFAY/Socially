@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FFFFFF"
+    android:padding="16dp"
+    android:gravity="center"
+    android:layout_marginTop="1dp">
+
+    <TextView
+    android:id="@+id/appName"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Socially"
+    android:textStyle="bold"
+        android:textSize="40sp"
+        android:textColor="#c64c40" />
+
+    <!-- Welcome Message -->
+    <ImageView
+        android:id="@+id/profileImage"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/button"
+        android:contentDescription="Profile Image"
+        android:scaleType="centerCrop"
+        android:src="@drawable/rafay2" />
+
+    <TextView
+    android:id="@+id/welcomeMessage"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Abdul Rafay"
+    android:textColor="#000000"
+    android:textSize="20sp"
+    android:textAlignment="center"
+    android:layout_marginTop="7dp" />
+
+        <!-- Buttons Layout -->
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_marginTop="10dp">
+
+    <!-- View Profile Button -->
+    <Button
+        android:id="@+id/viewProfileButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/log_in"
+        android:textColor="#FFFFFF"
+        android:background="@drawable/button"
+        android:layout_marginBottom="10dp"
+        android:layout_gravity="center"
+        app:backgroundTint="@null"/>
+
+    <!-- Log Out Button -->
+    <Button
+        android:id="@+id/logOutButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Switch Account"
+        android:background="@drawable/edittext_background"
+        android:textColor="#c64c40"
+        android:layout_gravity="center" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="190dp"
+        android:text="Don't have an account? Sign up"
+        android:textColor="#c64c40"
+        android:textSize="13sp"
+        android:textAlignment="center" />
+
+    <View
+        android:id="@+id/bottomPill"
+        android:layout_width="120dp"
+        android:layout_height="8dp"
+        android:layout_marginTop="20dp"
+    android:layout_gravity="center"
+    android:layout_marginBottom="10dp"
+    android:background="@drawable/rounded_pill" />
+    </LinearLayout>
+
+    </LinearLayout>
