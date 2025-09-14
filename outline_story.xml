@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="oval">
+
+    <!-- Gradient border from pink to orange -->
+    <gradient
+        android:startColor="#E91E63"
+        android:endColor="#5b5b5b"
+        android:type="linear" />
+
+    <!-- White stroke for separation -->
+    <stroke
+        android:width="5dp"
+        android:color="#bcbcbc" />
+
+</shape>

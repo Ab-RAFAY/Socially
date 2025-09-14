@@ -1,0 +1,4 @@
+<shape xmlns:android="http://schemas.android.com/apk/res/android" android:shape="rectangle">
+    <size android:width="6dp" /> <!-- spacing between progress bars -->
+    <solid android:color="@android:color/transparent"/> <!-- only spacing -->
+</shape>
